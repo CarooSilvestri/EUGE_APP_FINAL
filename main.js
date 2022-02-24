@@ -31,9 +31,12 @@ $(document).ready(function() {
                 +'<h3>'+valor.app_bajada+'</h3>'
                 +'<br/><p>'+valor.app_cuerpo+'</p>')
             
+            var footer = $('<div data-role="footer" data-position="fixed" data-theme="b"></div>')
+                footer.append('<h2><img src="img/logo.png" alt="logo" /></h2>')
 
             cont_page.append(info_page)
             cont_page.append(cont_texto)    
+            cont_page.append(footer)
             $(document.body).append(cont_page)  
 
         
