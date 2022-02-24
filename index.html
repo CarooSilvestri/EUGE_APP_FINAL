@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Nación Marvel</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="jqm/marvel.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+    <!----------------------------------------------------- HOME-->
+
+    <div data-role="page" id="home" data-theme="b">
+
+        <!--Bienvenidx desplegable-->
+        <div id="submenu" data-role="panel" data-display="push" data-theme="b">
+            <div class="panel-img">
+                <img src="img/bienvenidx.png" alt="bienv" style="width: 200px" />
+            </div>
+            <p>
+                Te damos la Bienvenida a <strong>Nación Marvel</strong>, una app
+                dedicada a los fanáticos de la franqui cia y a las personas
+                interesadas en formar parte de esta increíble comunidad.
+            </p>
+
+            <p>
+                Aquí podrás encontrar las últimas noticias del
+                <strong>Universo Cinematográfico de Marvel</strong> y sí eres nuevo en
+                este universo, tendrás lo necesario para comenzar este viaje de ida.
+            </p>
+            <a href="#" data-role="button" data-rel="close" data-mini="true" data-theme="b"
+                data-shadow="false">Cerrar</a>
+        </div>
+        <!--Fin bienvenidx desplegable-->
+
+
+        <div data-role="header" data-theme="b">
+            <h1 class="logo"><img src="img/logo.png" alt="logo"/></h1>
+
+            <a href="#nosotros" data-role="button" data-iconpos="notext" data-rel="popup" class="ui-btn-right"
+                data-icon="info" data-position-to="window" data-transition="pop" data-theme="b"></a>
+
+            <a href="#submenu" data-role="button" data-icon="bars" data-iconpos="notext" class="ui-btn-left"
+                data-rel="open">panel</a>
+
+            <div id="nosotros" data-role="popup" class="ui-content" data-history="false" data-overlay-theme="b">
+                <div data-role="header">
+                    <h1>INFORMACIÓN</h1>
+                    <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext"
+                        class="ui-btn-right">Cerrar popup</a>
+                </div>
+                <div role="main" class="ui-content" style="width: 25rem">
+                    <ul>
+                        <li><b>Carrera: </b>Diseño Multimedial</li>
+                        <li><b>Materia: </b>Desarrollo de Aplicaciones Multiplataforma</li>
+                        <li><b>Comisión:</b> DMN5A</li>
+                        <li><b>Turno: </b>Noche</li>
+                        <li><b>Cuatrimestre: </b>5to Cuatrimestre</li>
+                        <li><b>Docente: </b>Omar Toyos</li>
+                        <li><b>Caracter </b>de Entrega: Final</li>
+                        <li><b>Alumnos: </b></li>
+                    </ul>
+                    <div class="contenedor-img-nuestras">
+                        <div class="img-cepigrafe">
+                            <img class="fotos_nuestras" src="img/diego.jpg" alt="Coronel" />
+                            <p>Diego Coronel</p>
+                        </div>
+                        <div class="img-cepigrafe">
+                            <img class="fotos_nuestras" src="img/Juan.jpg" alt="Rivero" />
+                            <p>Juan María Rivero</p>
+                        </div>
+                        <div class="img-cepigrafe">
+                            <img class="fotos_nuestras" src="img/eugenia.png.jpg" alt="Nuñez" />
+                            <p>Eugenia Nuñez</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="footer" data-theme="b">
+                    <h2><img src="img/logo.png" alt="" /></h2>
+                </div>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="ui-grid-a springboard">
+                <div class="ui-block-a">
+                    <a href="#fase1" data-role="button" data-inline="true" data-transition="pop" data-theme="a">
+                        <img src="botones/icon_fase1.png" alt="fase1" />
+                        <p>FASE 1</p>
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#fase2" data-role="button" data-inline="true" data-transition="pop" data-theme="a">
+                        <img src="botones/icon_fase2.png" alt="fase2" />
+                        <p>FASE 2</p>
+                    </a>
+                </div>
+                <div class="ui-block-a">
+                    <a href="#fase3" data-role="button" data-inline="true" data-transition="pop" data-theme="a">
+                        <img src="botones/icon_fase3.png" alt="fase3" />
+                        <p>FASE 3</p>
+                    </a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#fase4" data-role="button" data-inline="true" data-transition="pop" data-theme="a">
+                        <img src="botones/icon_fase4.png" alt="fase4" />
+                        <p>FASE 4</p>
+                    </a>
+                </div>
+
+                <div class="ui-block-a">
+                    <a href="#orden" data-role="button" data-inline="true" data-transition="pop" data-theme="a">
+                        <img src="botones/icon_crono.png" alt="orden" />
+                        <p>
+                            ORDEN <br />
+                            CRONOLOGICO
+                        </p>
+                    </a>
+                </div>
+
+                <div class="ui-block-b">
+                    <a href="#noticias" data-role="button" data-inline="true" data-transition="pop" data-theme="a">
+                        <img src="botones/icon_noti.png" alt="noticias" />
+                        <p>NOTICIAS</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------Fase1-->
+
+    <div data-role="page" id="fase1" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>FASE 1</h1>
+
+            <a href="#home" data-icon="carat-l" data-theme="b" data-iconpos="notext" class="ui-btn-left"
+                data-rel="back">back</a>
+        </div>
+
+        <div role="main" class="ui-content" data-theme="b">
+            <div data-role="collapsible-set" data-expanded-icon="carat-u" data-collapsed-icon="carat-d"
+                data-iconpos="right" data-theme="b">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2 class="titulos">Iron Man: el hombre de hierro</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase1/ironman1.jpg" alt="" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Un empresario millonario construye un traje blindado y lo
+                                    usa para combatir el crimen y el terrorismo.
+                                </p>
+                                <p><strong>Director:</strong> Jon Favreau</p>
+                                <p><strong>Fecha de estreno:</strong> 30 de abril de 2008</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h2 class="titulos">El Increíble Hulk</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase1/hulk.jpg" alt="hulk" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Bruce Banner recorre el mundo en busca de un antídoto para
+                                    librarse de su alter ego. Además tendrá que hacer frente a
+                                    Emil, un nuevo enemigo, lo que convertirá a Nueva York en el
+                                    escenario de la última batalla entre las dos criaturas más
+                                    poderosas.
+                                </p>
+                                <p><strong>Director:</strong> Louis Leterrier</p>
+                                <p><strong>Fecha de estreno:</strong> 19 de junio de 2008</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h2 class="titulos">Iron Man 2</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase1/ironman2.jpg" alt="iron2" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Con el mundo ahora consciente de que él es Iron Man, el
+                                    millonario inventor Tony Stark debe forjar nuevas alianzas y
+                                    confrontar a un enemigo nuevo y poderoso.
+                                </p>
+                                <p><strong>Director:</strong> Jon Favreau</p>
+                                <p><strong>Fecha de estreno:</strong> 29 de abril de 2010</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h2 class="titulos">Thor</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase1/thor1.jpg" alt="thor" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Tras desatar una antigua guerra, el codicioso guerrero Thor
+                                    es desterrado a la Tierra por su padre para que viva entre
+                                    los hombres y descubra así el verdadero sentido de la
+                                    humildad. Allí, sin sus poderes, Thor deberá enfrentarse a
+                                    las fuerzas más oscuras que su mayor enemigo le enviará
+                                    desde Asgard.
+                                </p>
+                                <p><strong>Director:</strong> Kenneth Branagh</p>
+                                <p><strong>Fecha de estreno:</strong> 28 de abril de 2011</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h2 class="titulos">Capitán América: el primer vengador</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase1/cap1.jpg" alt="cap1" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Tras tres meses de someterse a un programa de entrenamiento
+                                    físico y táctico, encomiendan a Steve Rogers su primera
+                                    misión como Capitán América. Armado con un escudo
+                                    indestructible, emprende la guerra contra la perversa
+                                    organización HYDRA.
+                                </p>
+                                <p><strong>Director:</strong> Joe Johnston</p>
+                                <p><strong>Fecha de estreno:</strong> 28 de julio de 2011</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h2 class="titulos">The Avengers: los Vengadores</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase1/avengers1.jpg" alt="aven1" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    El director de la Agencia SHIELD decide reclutar a un equipo
+                                    para salvar al mundo de un desastre casi seguro cuando un
+                                    enemigo inesperado surge como una gran amenaza para la
+                                    seguridad mundial.
+                                </p>
+                                <p><strong>Director:</strong> Joss Whedon</p>
+                                <p><strong>Fecha de estreno:</strong> 26 de abril de 2012</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------Fase2-->
+
+    <div data-role="page" id="fase2" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>FASE 2</h1>
+
+            <a href="#home" data-icon="carat-l" data-theme="b" data-iconpos="notext" class="ui-btn-left"
+                data-rel="back">back</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div data-role="collapsible-set" data-expanded-icon="carat-u" data-collapsed-icon="carat-d"
+                data-iconpos="right" data-theme="b">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2 class="titulos">Iron Man 3</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase2/ironman3.jpg" alt="iron3" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    El descarado y brillante Tony Stark, tras ver destruido todo
+                                    su universo personal, debe encontrar y enfrentarse a un
+                                    enemigo cuyo poder no conoce límites. Este viaje pondrá a
+                                    prueba su entereza una y otra vez, y le obligará a confiar
+                                    en su ingenio.
+                                </p>
+                                <p><strong>Director:</strong> Shane Black</p>
+                                <p><strong>Fecha de estreno:</strong> 25 de abril de 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Thor: un mundo oscuro</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase2/thor2.jpg" alt="thor2" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Malekith, un enemigo más antiguo que el universo, regresa a
+                                    la Tierra para cumplir su plan destructor. Thor debe
+                                    enfrentarse a un rival al que ni siquiera Odín parece poder
+                                    detener y, desesperado, libera a su hermano Loki para que lo
+                                    ayude.
+                                </p>
+                                <p><strong>Director:</strong> Alan Taylor</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 21 de noviembre de 2013
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Capitán América y el Soldado del Invierno</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase2/cap2.jpg" alt="cap2" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Capitán América, Viuda Negra y un nuevo aliado, Falcon, se
+                                    enfrentan a un enemigo inesperado mientras intentan exponer
+                                    una conspiración que pone en riesgo al mundo.
+                                </p>
+                                <p><strong>Director:</strong> Joe Russo y Anthony Russo</p>
+                                <p><strong>Fecha de estreno:</strong> 3 de abril de 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Guardianes de la galaxia</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase2/guardianes1.jpg" alt="guardianes1" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Un aventurero espacial se convierte en la presa de unos
+                                    cazadores de tesoros después de robar el orbe de un villano
+                                    traicionero. Cuando descubre su poder, debe hallar la forma
+                                    de unir a unos rivales para salvar al universo.
+                                </p>
+                                <p><strong>Director:</strong> James Gunn</p>
+                                <p><strong>Fecha de estreno:</strong> 31 de julio de 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Avengers: era de Ultrón</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase2/avenger2.jpg" alt="avenger2" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Los Vengadores se reúnen de nuevo y juntan sus fuerzas con
+                                    las de los recién llegados Quicksilver y Bruja Escarlata
+                                    para luchar contra un robot maquiavélico llamado Ultrón, el
+                                    cual Tony Stark creó con el fin de defender la paz, pero
+                                    resultó defectuoso y ahora pretende exterminar a toda la
+                                    humanidad.
+                                </p>
+                                <p><strong>Director:</strong> Joss Whedon</p>
+                                <p><strong>Fecha de estreno:</strong> 23 de abril de 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Ant-Man: el hombre hormiga</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase2/antman1.jpg" alt="antmant1" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Un ladrón con la habilidad de encogerse de tamaño pero
+                                    crecer en fuerza debe sacar su héroe interior y ayudar a su
+                                    mentor a llevar a cabo un plan para salvar al mundo.
+                                </p>
+                                <p><strong>Director:</strong> Peyton Reed</p>
+                                <p><strong>Fecha de estreno:</strong> 16 de julio de 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------Fase3-->
+
+    <div data-role="page" id="fase3" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>FASE 3</h1>
+
+            <a href="#home" data-icon="carat-l" data-theme="B" data-iconpos="notext" class="ui-btn-left"
+                data-rel="back">back</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div data-role="collapsible-set" data-expanded-icon="carat-u" data-collapsed-icon="carat-d"
+                data-iconpos="right" data-theme="b">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2 class="titulos">Capitán América: Civil War</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/cap3.jpg" alt="cap3" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Después de que otro incidente internacional, en el que se
+                                    ven envueltos los Vengadores, produzca daños colaterales, la
+                                    presión política obliga a poner en marcha un sistema para
+                                    depurar responsabilidades.
+                                </p>
+                                <p><strong>Director:</strong> Joe Russo y Anthony Russo</p>
+                                <p><strong>Fecha de estreno:</strong> 5 de mayo de 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Doctor Strange: hechicero supremo</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/dr1.jpg" alt="dr1" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Después de sufrir un accidente, un brillante y arrogante
+                                    cirujano busca rehabilitarse mediante técnicas alternativas.
+                                    Sus intentos le llevan a descubrir que ha sido designado
+                                    para encabezar la lucha contra una fuerza oscura y
+                                    sobrenatural.
+                                </p>
+                                <p><strong>Director:</strong> Scott Derrickson</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 20 de octubre de 2016
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Guardianes de la Galaxia vol. 2</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/guardianes2.jpg" alt="guardianes2" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Una poderosa raza alienígena contrata a los Guardianes para
+                                    que protejan sus valiosas baterías de energía, pero, cuando
+                                    Rocket las roba, los alienígenas envían a sus tropas de
+                                    combate a vengarse de los Guardianes.
+                                </p>
+                                <p><strong>Director:</strong> James Gunn</p>
+                                <p><strong>Fecha de estreno:</strong> 5 de mayo de 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Spider-Man: de regreso a casa</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/spidey1.jpg" alt="spidey" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Peter Parker asume su nueva identidad como Spider-Man y
+                                    regresa a vivir con su tía después de su aventura con los
+                                    Vengadores. Al volver, mientras sigue bajo la tutela de Tony
+                                    Stark, descubre que ha surgido un nuevo y despiadado enemigo
+                                    que pretende destruir todo lo que ama: el Buitre.
+                                </p>
+                                <p><strong>Director:</strong> Jon Watts</p>
+                                <p><strong>Fecha de estreno:</strong> 7 de julio de 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Thor: Ragnarok</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/thor3.jpg" alt="thor3" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Thor está preso en el otro extremo del universo. Necesita
+                                    regresar a tiempo para evitar que la todopoderosa Hela
+                                    destruya su mundo, pero para escapar de su confinamiento y
+                                    evitar el apocalipsis tendrá que vencer antes al increíble
+                                    Hulk en un torneo de gladiadores.
+                                </p>
+                                <p><strong>Director:</strong> Taika Waititi</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 3 de noviembre de 2017
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Pantera Negra</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/black.jpg" alt="black" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Después de morir su padre, T'Challa regresa a su nación,
+                                    Wakanda. Una vez allí, descubre que tiene un nuevo y
+                                    terrible enemigo, y T'Challa asume la personalidad de
+                                    Pantera Negra para salvar no solo al reino de Wakanda, sino
+                                    a toda la humanidad.
+                                </p>
+                                <p><strong>Director:</strong> Ryan Coogler</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 15 de febrero de 2018
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Avengers: Infinity War</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/avenger3.jpg" alt="aven3" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Los superhéroes se alían para vencer al poderoso Thanos, el
+                                    peor enemigo al que se han enfrentado. Si Thanos logra
+                                    reunir las seis gemas del infinito: poder, tiempo, alma,
+                                    realidad, mente y espacio, nadie podrá detenerlo.
+                                </p>
+                                <p><strong>Director:</strong> Anthony Russo y Joe Russo</p>
+                                <p><strong>Fecha de estreno:</strong> 26 de abril de 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Ant-Man y la Avispa</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/antman2.jpg" alt="ant2" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Scott Lang vuelve a enfundarse el traje de Ant-Man para
+                                    pelear codo a codo junto con la Avispa. La misión revela a
+                                    los dos superhéroes un secreto terrible y los enfrenta a su
+                                    enemigo más poderoso.
+                                </p>
+                                <p><strong>Director:</strong> Peyton Reed</p>
+                                <p><strong>Fecha de estreno:</strong> 6 de julio de 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Capitana Marvel</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/capmarvel.jpg" alt="capmarvel" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Una guerrera extraterrestre de la civilización Kree se
+                                    encuentra atrapada en medio de una batalla. Con la ayuda de
+                                    Nick Fury trata de descubrir los secretos de su pasado
+                                    mientras aprovecha sus poderes para terminar la guerra.
+                                </p>
+                                <p><strong>Directores:</strong> Anna Boden y Ryan Fleck</p>
+                                <p><strong>Fecha de estreno:</strong> 7 de marzo de 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Avengers: Endgame</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase3/endgame.jpg" alt="end" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Los Vengadores restantes deben encontrar una manera de
+                                    recuperar a sus aliados para un enfrentamiento épico con
+                                    Thanos, el malvado que diezmó el planeta y el universo.
+                                </p>
+                                <p><strong>Directores:</strong> Joe Russo y Anthony Russo</p>
+                                <p><strong>Fecha de estreno:</strong> 26 de abril de 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------Fase4-->
+
+    <div data-role="page" id="fase4" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>FASE 4</h1>
+
+            <a href="#home" data-icon="carat-l" data-theme="b" data-iconpos="notext" class="ui-btn-left"
+                data-rel="back">back</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div data-role="collapsible-set" data-expanded-icon="carat-u" data-collapsed-icon="carat-d"
+                data-iconpos="right" data-theme="b">
+                <div data-role="collapsible" data-collapsed="false">
+                    <h2 class="titulos">WandaVision</h2>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/wandavision.jpg" alt="wanda" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Con vidas suburbanas idealizadas, los seres superpoderosos
+                                    Wanda y Vision comienzan a sospechar que nada es lo que
+                                    parece.
+                                </p>
+                                <p><strong>Director:</strong> Matt Shakman</p>
+                                <p><strong>Fecha de estreno:</strong> 15 de enero de 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Falcon y el Soldado de Invierno</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/falcon.jpg" alt="falcon" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Falcon y Winter Soldier son un dúo diferente que se unen
+                                    para una aventura internacional que pondrá a prueba sus
+                                    habilidades de supervivencia, así como su paciencia.
+                                </p>
+                                <p><strong>Director:</strong> Kari Skogland</p>
+                                <p><strong>Fecha de estreno:</strong> 19 de marzo de 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Loki</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/loki.jpg" alt="loki" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Loki, el Dios de las Mentiras, se aleja de la sombra de su
+                                    hermano para embarcarse en una aventura que se desarrolla
+                                    tras los acontecimientos de "Vengadores: Endgame".
+                                </p>
+                                <p><strong>Director:</strong> Kate Herron</p>
+                                <p><strong>Fecha de estreno:</strong> 9 de junio de 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Black Widow</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/blackwidow.jpg" alt="blackwidow" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Una peligrosa conspiración, relacionada con su pasado,
+                                    persigue a Natasha Romanoff, también conocida como Viuda
+                                    Negra. La agente tendrá que lidiar con las consecuencias de
+                                    haber sido espía, así como con las relaciones rotas, para
+                                    sobrevivir.
+                                </p>
+                                <p><strong>Director:</strong> Cate Shortland</p>
+                                <p><strong>Fecha de estreno:</strong> 9 de julio de 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">What If..?</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/what.jpg" alt="what" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    El espacio explora lo que sucedería si los principales
+                                    momentos de las películas del Universo Cinematográfico de
+                                    Marvel ocurrieran de manera diferente.
+                                </p>
+                                <p>
+                                    <strong>Directores:</strong> Kevin Feige y Brad Winderbaum
+                                </p>
+                                <p><strong>Fecha de estreno:</strong> 11 de agosto de 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Shang-Chi and the Legend of the Ten Rings</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/shang.jpg" alt="shang" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    El maestro de artes marciales Shang-Chi se enfrenta al
+                                    pasado que creía haber dejado atrás cuando se ve envuelto en
+                                    la red de la misteriosa organización de los Diez Anillos.
+                                </p>
+                                <p><strong>Director:</strong> Destin Daniel Cretton</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 2 de septiembre de 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Eternals</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/eternals.jpg" alt="eternals" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Los Eternos son una raza de seres inmortales con poderes
+                                    sobrehumanos que han vivido en secreto en la Tierra durante
+                                    miles de años. Aunque nunca han intervenido en el destino de
+                                    la población, ahora una amenaza se cierne sobre la
+                                    humanidad.
+                                </p>
+                                <p><strong>Director:</strong> Chloé Zhaon</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 5 de noviembre de 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Hawkeye</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/hawkeye.jpg" alt="hawkeye" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Clint Barton y Kate Bishop disparan flechas mientras evitan
+                                    convertirse ellos mismos en el blanco cuando la situación
+                                    cambia.
+                                </p>
+                                <p><strong>Directores:</strong> Thomas y Bert & Bertie</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 24 de noviembre de 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3 class="titulos">Spider-Man: No Way Home</h3>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <img src="img/fase4/spidey3.jpg" alt="spidey3" />
+                        </div>
+                        <div class="ui-block-b ui-grid-a">
+                            <div class="ui-block-c padding">
+                                <p>
+                                    Tras descubrirse la identidad secreta de Peter Parker como
+                                    Spider-Man, la vida del joven se vuelve una locura. Peter
+                                    decide pedirle ayuda al Doctor Extraño para recuperar su
+                                    vida. Pero algo sale mal y provoca una fractura en el
+                                    multiverso.
+                                </p>
+                                <p><strong>Director:</strong> Jon Watts</p>
+                                <p>
+                                    <strong>Fecha de estreno:</strong> 16 de diciembre de 2021
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------ORDEN-->
+
+    <div data-role="page" id="orden" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>CRONOLOGIA</h1>
+
+            <a href="#home" data-icon="carat-l" data-theme="b" data-iconpos="notext" class="ui-btn-left"
+                data-rel="back">back</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div id="primera">
+                <ul data-role="listview" data-inset="true" data-filter="false" data-autodividers="false">
+                    <li data-role="list-divider">MARATÓN EN ORDEN CRONOLÓGICO</li>
+                    <li data-icon="false">Capitán America</li>
+                    <li data-icon="false">Capitana Marvel</li>
+                    <li data-icon="false">Iron Man</li>
+                    <li data-icon="false">Iron Man 2</li>
+                    <li data-icon="false">El increíble Hulk</li>
+                    <li data-icon="false">Thor</li>
+                    <li data-icon="false">Los Vengadores</li>
+                    <li data-icon="false">Iron Man 3</li>
+                    <li data-icon="false">Thor: El mundo oscuro</li>
+                    <li data-icon="false">Capitán América 2</li>
+                    <li data-icon="false">Guardianes de la Galaxia</li>
+                    <li data-icon="false">Guardianes de la Galaxia 2</li>
+                    <li data-icon="false">Los Vengadore</li>
+                    <li data-icon="false">Ant-Man: El hombre hormiga</li>
+                    <li data-icon="false">Capitán América: Civil War</li>
+                    <li data-icon="false">Spider-Man: de regreso a casa</li>
+                    <li data-icon="false">Doctor Strange: hechicero supremo</li>
+                    <li data-icon="false">Pantera Negra</li>
+                    <li data-icon="false">Black Widow</li>
+                    <li data-icon="false">Thor: Ragnarok</li>
+                    <li data-icon="false">Ant-Man y la Avispa</li>
+                    <li data-icon="false">Avengers: Infinity War</li>
+                    <li data-icon="false">Avengers: Endgame</li>
+                    <li data-icon="false">Avengers: Endgame</li>
+                    <li data-icon="false">Loki</li>
+                    <li data-icon="false">Spider-Man: Far From Home</li>
+                    <li data-icon="false">What If…?</li>
+                    <li data-icon="false">WandaVision</li>
+                    <li data-icon="false">The Falcon and the Winter Soldier</li>
+                    <li data-icon="false">Shang-Chi and the Legend of the Ten Rings</li>
+                    <li data-icon="false">Eternals</li>
+                    <li data-icon="false">Hawkeye</li>
+                    <li data-icon="false">Spider-Man: No Way Home</li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIAS-->
+
+    <div data-role="page" id="noticias" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+
+            <a href="#home" data-role="button" data-icon="carat-l" data-iconpos="notext" class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-icon="false" data-theme="b" id="lista-noticias">
+                <li>
+                    <a href="#not1">
+                        <img src="img/noticias/moon.jpg" alt="moon" />
+                        <h3>Moon Knight: Todo lo que necesitas saber</h3>
+                        <p>Por Diego Coronel - 2022-02-16</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not2">
+                        <img src="img/noticias/dr2.jpg" alt="dr2" />
+                        <h3>
+                            El tráiler de Doctor Strange 2 impacta al director original
+                        </h3>
+                        <p>Por Eugenia Nuñez - 2022-02-15</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not3">
+                        <img src="img/noticias/shehulk.jpg" alt="Benedict Cumberbatch" />
+                        <h3>
+                            Benedict Cumberbatch dudó sobre el súper éxito de Spider-Man: No
+                            Way Home
+                        </h3>
+                        <p>Por Eugenia Nuñez - 2022-02-9</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not4">
+                        <img src="img/noticias/spider.jpg" alt="spider" />
+                        <h3>
+                            Los fans pueden hacer ganar un Oscar a Spider-Man: No Way Home
+                        </h3>
+                        <p>Por Juan Rivero - 2022-02-8</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not5">
+                        <img src="img/noticias/Zoe.jpg" alt="Zoe Saldana" />
+                        <h3>
+                            Zoe Saldana revela detalles del rodaje de Guardianes de la
+                            Galaxia Vol 3
+                        </h3>
+                        <p>Por Diego Coronel - 2022-02-7</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not6">
+                        <img src="img/noticias/kit.jpg" alt="Kit Harington" />
+                        <h3>Kit Harington está deseando regresar a Marvel Studios</h3>
+                        <p>Por Juan Rivero - 2022-02-7</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not7">
+                        <img src="img/noticias/bp.jpg" alt="Black Panther" />
+                        <h3>
+                            Filtran una escena de Black Panther: Wakanda Forever que
+                            confirma el mayor SPOILER
+                        </h3>
+                        <p>Por Eugenia Nuñez - 2022-02-6</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#not8">
+                        <img src="img/noticias/cm.jpg" alt="Cap Marvel" />
+                        <h3>Capitana Marvel 2 hará más poderosa a Carol Danvers</h3>
+                        <p>Por Diego Coronel - 2022-02-6</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA DE MOON-->
+    <div data-role="page" id="not1" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content noticia">
+            <img src="img/noticias/noti-moon.jpg" alt="Moon Knight" />
+            <p>Por Diego Coronel - 2022-02-16</p>
+            <h2>Marvel confirma la calificación de Caballero Luna</h2>
+            <h3>
+                ¿Para adultos? La serie de Caballero Luna en Disney+ recibe
+                oficialmente la calificación de edades por parte de Marvel Studios.
+            </h3>
+            <p>
+                Moon Knight será una serie de televisión en línea basada en el
+                personaje de Marvel Comics del mismo nombre. Será la sexta serie de
+                televisión de la Fase Cuatro del Universo Cinematográfico de Marvel.
+                Estará producida por Marvel Studios, y se estrenará el 30 de marzo de
+                2022 en el streaming de Disney+.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA Dr Strange-->
+    <div data-role="page" id="not2" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/noti-dr2.jpg" alt="Dr Strange 2" />
+            <p>Por Eugenia Nuñez - 2022-02-15</p>
+            <h2>El tráiler de Doctor Strange 2 impacta al director original</h2>
+            <h3>
+                Scott Derrickson iba a ser el director de Doctor Strange 2, pero dejó
+                el proyecto en manos del legendario Sam Raimi.
+            </h3>
+            <p>
+                Los fans de Marvel Studios están alucinando con el tráiler de Doctor
+                Strange 2, ya que es muy enigmático y aparecerán muchos personaje
+                increíbles. Además, en la película habrá diferentes variantes de los
+                mejores héroes que por ahora ni imaginamos.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA Benedict-->
+    <div data-role="page" id="not3" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/shehulk.jpg" alt="Benedict Cumberbatch" />
+            <p>Por Eugenia Nuñez - 2022-02-9</p>
+            <h2>
+                Benedict Cumberbatch dudó sobre el súper éxito de Spider-Man: No Way
+                Home
+            </h2>
+            <h3>
+                El actor Benedict Cumberbatch interpreta al Doctor Strange en Marvel
+                Studios y tuvo una participación destacada en Spider-Man: No Way Home.
+            </h3>
+            <p>
+                El jefe de Marvel Studios, Kevin Feige, siempre pensó que la película
+                Spider-Man: No Way Home sería un gran éxito de taquilla aunque cuando
+                se estrenó la pandemia todavía estuviera presente en nuestras vidas.
+                Mientras que Benedict Cumberbatch no lo tenía tan claro. Obviamente,
+                el directivo acertó, ya que la tercera entrega del Peter Parker de Tom
+                Holland ya ha recaudado más de 1.804 millones de dólares en todo el
+                mundo.
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA Spider-->
+    <div data-role="page" id="not4" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/noti-spiderman.jpg" alt="Spiderman" />
+            <p>Por Juan Rivero - 2022-02-8</p>
+            <h2>Los fans pueden hacer ganar un Oscar a Spider-Man: No Way Home</h2>
+            <h3>
+                Este año los Oscars tendrán una categoría especial y Spider-Man: No
+                Way Home podría recibir el reconocimiento que se merece.
+            </h3>
+            <p>
+                La película más taquillera de 2021 es Spider-Man: No Way Home, ya que
+                ha recaudado más de 1.804 millones de dólares y todavía podría
+                aumentar más. Una cifra exagerada sobre todo porque la pandemia ha
+                afectado mucho a la industria cinematográfica. Así que los fans de
+                Marvel Studios esperaban que hubiera recibido algún reconocimiento en
+                los Oscars, pero tan solo opta a Mejores Efectos Digitales.
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA zoe-->
+    <div data-role="page" id="not5" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/noti-zoe.jpg" alt="Spiderman" />
+            <p>Por Diego Coronel - 2022-02-7</p>
+            <h2>
+                Zoe Saldana revela detalles del rodaje de Guardianes de la Galaxia Vol
+                3
+            </h2>
+            <h3>
+                La actriz Zoe Saldana interpreta a Gamora en el Universo
+                Cinematográfico de Marvel Studios y ya está rodando Guardianes de la
+                Galaxia Vol 3.
+            </h3>
+            <p>
+                James Gunn está preparando la película Guardianes de la Galaxia Vol 3
+                que volverá a contar con un gran reparto encabezado por Chris Pratt
+                como Peter Quill / Star-Lord, Zoe Saldana como Gamora, Dave Bautista
+                como Drax, Vin Diesel como Groot (voz), Bradley Cooper como Rocket
+                (voz), Karen Gillan como Nebula, Sylvester Stallone como Stakar Ogord,
+                Elizabeth Debicki como Ayesha, Will Poulter como Adam Warlock, Pom
+                Klementieff como Mantis y Sean Gunn como Kraglin.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA Kit-->
+    <div data-role="page" id="not6" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/noti-kit.jpg" alt="Spiderman" />
+            <p>Por Juan Rivero - 2022-02-7</p>
+            <h2>Kit Harington está deseando regresar a Marvel Studios</h2>
+            <h3>
+                El actor Kit Harington que debutó en Marvel Studios en Los Eternos,
+                quiere regresar como Dane Whitman / Caballero Negro.
+            </h3>
+            <p>
+                El equipo de Los Eternos estaba formado por 10 personajes increíbles,
+                pero la película de Marvel Studios añadió también a Dane Whitman de
+                Kit Harington. Él interpreta a un humano cuya familia tiene una
+                leyenda epsectacular y en la escena post-créditos le dan una espada
+                que lo convertirá en el Caballero Negro, un poderos héroe de los
+                cómics.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA Black Panther-->
+    <div data-role="page" id="not7" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/noti-bp.jpg" alt="Black Panther" />
+            <p>Por Eugenia Nuñez - 2022-02-6</p>
+            <h2>
+                Filtran una escena de Black Panther: Wakanda Forever que confirma el
+                mayor SPOILER
+            </h2>
+            <h3>
+                Desde hace un tiempo hay un gran rumor sobre Black Panther: Wakanda
+                Forever y ahora ya lo han confirmado y será algo espectacular.
+            </h3>
+            <p>
+                En 2022 se estrenarán tres entregas del Universo Cinematográfico
+                Marvel Studios como son Doctor Strange en el multiverso de la locura,
+                Thor: Love and Thunder y Black Panther: Wakanda Forever. Esta última,
+                sin duda será la más emotiva, ya que mostrará el funeral de T’Challa
+                para que los fans puedan despedirse del actor Chadwick Boseman. Pero
+                además habrá grandes sorpresas y ahora os dejamos una filtración
+                brutal.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------NOTICIA Cap Marvel-->
+    <div data-role="page" id="not8" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <h1>NOTICIAS</h1>
+            <a href="#noticias" data-role="button" data-icon="carat-l" data-iconpos="notext"
+                class="ui-btn-left">Info</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <img src="img/noticias/noti-cm.jpg" alt="Cap Marvel" />
+            <p>Por Diego Coronel - 2022-02-6</p>
+            <h2>Capitana Marvel 2 hará más poderosa a Carol Danvers</h2>
+            <h3>
+                Si Carol Danvers ya era superpoderosa, Capitana Marvel 2 directamente
+                la va a convertir en una superheroína prácticamente indestructible.
+            </h3>
+            <p>
+                Carol Danvers será todavía más poderosa en Capitana Marvel 2, según ha
+                explicado la propia Brie Larson. Tras ayudar a Los Vengadores en su
+                dura batalla final contra Thanos en Vengadores: Endgame, la
+                superheroína del UCM vivirá una serie de aventuras galácticas lejos de
+                nuestro planeta. Sin embargo, pronto descubriremos qué es lo que ha
+                estado haciendo, cuando se estrene su esperada secuela. Una segunda
+                parte en la que compartirá protagonismo con Kamala Khan y Monica
+                Rambeau, quien obtuvo sus superpoderes en la espectacular serie
+                WandaVision.
+            </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h2><img src="img/logo.png" alt="logo" /></h2>
+        </div>
+    </div>
+
+    
+    <script src="jqm/jquery-1.12.3.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.5.js"></script>    
+    <script src="main.js"></script>
+</body>
+
+</html>

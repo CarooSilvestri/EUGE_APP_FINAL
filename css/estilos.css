@@ -1,0 +1,70 @@
+#home .ui-content {
+  margin: 0;
+  padding: 0;
+}
+
+#home .ui-btn {
+  border: none;
+  box-shadow: none;
+}
+
+#home .ui-btn img {
+  max-width: 100%;
+}
+
+.springboard div {
+  height: 33.33vh;
+  line-height: 33.33vh;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  padding: 2px !important;
+}
+
+.padding {
+  padding-left: 15px;
+}
+
+.titulos {
+  font-size: medium;
+}
+
+#nosotros {
+  color: white;
+}
+
+a:hover {
+  background-color: transparent !important;
+}
+
+.contenedor-img-nuestras {
+    display: flex;
+    text-align: center;
+}
+
+.fotos_nuestras {
+    margin: 0.5em;
+}
+
+
+#submenu p {
+    margin-bottom: 10%;
+}
+
+.panel-img { 
+    margin-bottom: 20px;
+}
+
+.noticia {
+
+  padding: 5%;
+}
